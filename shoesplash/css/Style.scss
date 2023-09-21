@@ -1,9 +1,41 @@
 .divcontainer {
     background-color: #f6d4f5;
+    margin: 0 0 2rem 0;
+    padding: 2.5rem 18rem;
+
+    #cart {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 20rem;
+
+        p {
+            span {
+
+                display: block;
+            }
+        }
+
+        .icon {
+            color: #e4afe2;
+            font-size: 24px;
+            padding-left: 1rem;
+        }
+
+        .clear {
+            clear: both;
+        }
+    }
 }
+
+
 
 nav {
     text-align: center;
+    text-transform: uppercase;
 
     a {
         text-decoration: none;
@@ -28,57 +60,148 @@ footer {
             text-align: center;
         }
     }
-
-    #bottombar {
-        background-color: #f5d5f6;
-        display: flex;
-        justify-content: space-evenly;
-        text-align: center;
-
-        article {
-            display: flex;
-            flex-direction: column;
-        }
-    }
 }
 
+#bottombar {
+    background-color: #f5d5f6;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
 
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 #news {
     display: flex;
     justify-content: center;
 }
 
-#new,
-#best,
-#crush {
-    margin: 0.5rem;
-    padding: 1rem;
-    border: 1px solid grey;
-    justify-content: center;
-}
-
-body {
-    background-color: whitesmoke;
-}
-
 #news {
     #new {
+        margin: 0.5rem;
+        padding: 1rem;
+        border: 1px solid grey;
+        justify-content: center;
+
         h2 {
             background-color: purple;
-            background-size: 1rem;
+            padding: 0.5rem;
         }
     }
 
     #best {
+        margin: 0.5rem;
+        padding: 1rem;
+        border: 1px solid grey;
+        justify-content: center;
+
         h2 {
             background-color: greenyellow;
+            padding: 0.5rem;
+
         }
     }
 
     #crush {
+        margin: 0.5rem;
+        padding: 1rem;
+        border: 1px solid grey;
+        justify-content: center;
+
         h2 {
             background-color: rgb(78, 78, 243);
+            padding: 0.5rem;
+
         }
+    }
+}
+
+#select {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+    width: 963px;
+    padding: 2rem 1rem;
+
+    h1 {
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+        width: 100%;
+    }
+
+    .escarpin {
+        opacity: 60%;
+
+        h3 {
+            margin: 0.5rem;
+        }
+    }
+
+    .loubou {
+        h3 {
+            margin: 0.5rem;
+        }
+    }
+}
+
+body {
+    background-color: navajowhite;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+
+
+    #slider {
+        width: 963px;
+        margin: 0 auto;
+
+        h2 {
+            position: absolute;
+            background-color: #f6d4f5;
+            margin: 1rem;
+            padding: 1rem;
+            opacity: 75%;
+        }
+
+        img {
+            width: inherit;
+        }
+    }
+}
+
+#bottombar {
+    article {
+        ul {
+            list-style-type: none;
+        }
+    }
+}
+
+#news {
+    h2::before {
+        content: url(../img/logo4.png );
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 1rem;
+        height: 1rem;
+        margin: 10px;
+
+    }
+}
+
+#news {
+
+    #new,
+    #best,
+    #crush {
+        background-color: white;
     }
 }
